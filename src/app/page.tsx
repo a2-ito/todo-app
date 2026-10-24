@@ -36,7 +36,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50 p-8 max-w-2xl mx-auto">
-      <h1 className="text-3xl text-gray-400 font-bold mb-6 text-center">Todo App</h1>
+      <h1 className="text-3xl text-gray-400 font-bold mb-6 text-center">
+        Todo App
+      </h1>
 
       <TodoForm onAdd={handleAdd} />
       <FilterBar filter={filter} setFilter={setFilter} />

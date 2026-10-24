@@ -32,13 +32,9 @@ A full-stack Todo management application built with Next.js, Drizzle ORM, and a 
 
 Create a `.env.local` file for local development:
 
-
-
 DB_TYPE=sqlite
 
-
 For production (example):
-
 
 ```
 DB_TYPE=mysql
@@ -64,17 +60,11 @@ Set the following variables:
 
 ### 2. Generate migrations
 
-
-
 npx drizzle-kit generate --config=drizzle.mysql.config.ts
-
 
 ### 3. Apply migrations
 
-
-
 npx drizzle-kit push --config=drizzle.mysql.config.ts
-
 
 ---
 
@@ -92,17 +82,21 @@ Separate drizzle config files are provided for each dialect.
 ## API Endpoints
 
 ### GET /api/todos
+
 Returns all todos.
 
 ### POST /api/todos
+
 Creates a new todo.
 
 ### GET /api/todos/:id
+
 Returns a specific todo.
 
 ### PUT /api/todos/:id
+
 Updates a todo.
 
 ### DELETE /api/todos/:id
-Deletes a todo.
 
+Deletes a todo.
