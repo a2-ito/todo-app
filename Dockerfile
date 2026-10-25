@@ -1,6 +1,6 @@
 
 # ---- Base Image ----
-FROM node:20-alpine AS base
+FROM node:24-alpine AS base
 WORKDIR /app
 ENV NODE_ENV=production
 
@@ -19,7 +19,7 @@ COPY . .
 RUN npm run build
 
 # ---- Runner ----
-FROM node:20-alpine AS runner
+FROM node:24-alpine AS runner
 WORKDIR /app
 ENV NODE_ENV=production
 
